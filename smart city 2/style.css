@@ -1,6 +1,7 @@
 .berita,
 .layanan,
-.sight, .footer-content {
+.sight,
+.footer-content {
   height: 520px;
   width: 1138px;
   margin: 10px auto;
@@ -14,34 +15,38 @@
 }
 
 .navbar {
-    background-color: #DAC0A3;
-    height: 88px;
+  background-color: #dac0a3;
+  height: 88px;
 }
 
 .nav-btn > ul > li:first-child {
-    margin-left: 240px;
+  margin-left: 120px;
 }
 
 .nav-btn > ul > li {
   margin-right: 52px;
-	color: white;
+  color: white;
   position: relative;
   text-decoration: none;
   font-family: poppins;
 }
 
 .nav-btn > ul > li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
-  height: 4px;
+  height: 3px;
   border-radius: 4px;
   background-color: white;
   bottom: 0;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.2s ease-in;
+  -webkit-transition: transform 0.2s ease-in;
+  -moz-transition: transform 0.2s ease-in;
+  -ms-transition: transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in;
 }
 
 .nav-btn > ul > li:hover::before {
@@ -50,15 +55,34 @@
 }
 
 .nav-item > a {
-    text-decoration: none;
-    color: azure;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+  text-decoration: none;
+  color: azure;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.logo > div > p:first-child {
+  font-weight: bold;
+  font-size: 27px;
+  margin: 0px 0 0 8px;
+}
+
+.logo > div > p:last-child {
+  font-size: 10px;
+  margin: 0 0 0 10px;
 }
 
 .card-berita {
   width: 21rem;
   height: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .event {
@@ -67,43 +91,156 @@
 }
 
 .event-slide {
-  overflow: scroll;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
   overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .event-slide:last-child {
   margin-right: 20px;
 }
 
+.event-element {
+  width: 600px;
+  position: relative;
+  background-color: #102C57;
+  float: none;
+  margin: 0 0.25%;
+  display: inline-block;
+  zoom: 1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.event-element > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+
 .img-event {
   width: 600px;
   border-radius: 10px;
-  margin: 10px 0 10px 20px;
 }
 
-.img-event:hover {
-  width: 600px;
+.event-element:hover .img-event {
+  width: 100%;
   border-radius: 10px;
-  margin: 10px 0 10px 20px;
-  box-shadow: 0 0 10px 5px #DAC0A3;
-}
-
-.card-sight {
-  width: 18rem;
-  height: 20rem;
+  opacity: 100%;
+  filter: brightness(50%);
 }
 
 .sight-slide {
-    overflow-x: auto;
-    background-color: salmon;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
-.footer {
-    width: 100%;
-    height: 555px;
-    background-color: #DAC0A3;
+.sight-element {
+  width: 250px;
+  height: 290px;
+  padding-bottom: 10px;
+  float: none;
+  margin: 0 0.25%;
+  display: inline-block;
+  zoom: 1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.sight-element > img{
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+
+footer {
+  width: 100%;
+  height: 520px;
+  background-color: #102C57;
+  color: white;
+}
+
+footer > div > div > h6 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 200;
+}
+
+footer > div > div > p {
+  font-weight: 50;
+  font-size: 15px;
+}
+
+.laporan {
+  height: 200px;
+  width: 1138px;
+  margin: 10px auto;
+  border-radius: 50px;
+  background-color: #ebd0b2d5;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: 1px solid #dac0a3;
 }
 
 .coklat {
-  color: #DAC0A3;
+  color: #dac0a3;
+}
+
+.laporan > div > p {
+  width: 700px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.laporan > div > button {
+  background-color: #102C57;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 200px;
+  height: 80px;
+  color: white;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.laporan > div > button:hover {
+  background-color: red;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 200px;
+  height: 80px;
+  color: white;
+  margin-top: 10px;
+  font-weight: 600;
 }
