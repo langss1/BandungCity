@@ -1,0 +1,66 @@
+.transportasi {
+  width: 1138px;
+  margin: 10px auto;
+}
+
+.transportasi {
+  padding-top: 90px;
+}
+
+.transportasi > p {
+  font-size: 56px;
+}
+
+.tarif {
+  height: 80px;
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 30px;
+  background: rgb(240,210,177);
+background: linear-gradient(90deg, rgba(240,210,177,1) 0%, rgba(249,222,191,1) 35%, rgba(255,238,213,1) 100%);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  line-height: 80px;
+}
+
+.tarif > p {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 45px;
+  color: white;
+  font-family: poppins;
+}
+
+.nama > p, .rute > p {
+    font-size: 30px;
+    color: #102C57;
+    font-weight: 700;
+    font-family: poppins;
+}
+
+.rute {
+    margin: 40px auto 10px 0;
+    background-color: rgb(222, 229, 229);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.rute > p, .rute > div {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.rute > div > img {
+    width: 20px;
+}
+
+.pemberhentian {
+  text-align: center;
+  margin: 20px auto;
+  font-family: poppins;
+}
