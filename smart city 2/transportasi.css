@@ -1,14 +1,13 @@
-.transportasi {
-  width: 1138px;
-  margin: 10px auto;
+.transportasi > p {
+  font-size: clamp(2rem, 0.286rem + 3.571vw, 3rem);
 }
 
 .transportasi {
   padding-top: 90px;
-}
-
-.transportasi > p {
-  font-size: 56px;
+  font-size: clamp(1rem, 0.286rem + 3.571vw, 1.5rem);
+  font-family: poppins;
+  width: 1138px;
+  margin: 10px auto;
 }
 
 .tarif {
@@ -34,7 +33,7 @@ background: linear-gradient(90deg, rgba(240,210,177,1) 0%, rgba(249,222,191,1) 3
 }
 
 .nama > p, .rute > p {
-    font-size: 30px;
+    font-size: 2rem;
     color: #102C57;
     font-weight: 700;
     font-family: poppins;
@@ -51,7 +50,7 @@ background: linear-gradient(90deg, rgba(240,210,177,1) 0%, rgba(249,222,191,1) 3
 }
 
 .rute > p, .rute > div {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 20px auto;
 }
 
@@ -63,4 +62,33 @@ background: linear-gradient(90deg, rgba(240,210,177,1) 0%, rgba(249,222,191,1) 3
   text-align: center;
   margin: 20px auto;
   font-family: poppins;
+  font-size: clamp(0.5rem, 0.286rem + 3.571vw, 1.5rem);
+}
+
+@media (max-width: 575.98px)  {
+  .transportasi {
+    padding: 10px;
+    width: inherit;
+  }
+
+  .transportasi img {
+    width: 100%;
+  }
+
+  .nama {
+    text-align: center;
+  }
+  .rute-container, .tarif, .foto-container {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  .transportasi > p {
+    width: inherit;
+  }
+  .pemberhentian {
+    font-size: 15px;
+  }
+  .rute > p {
+    font-size: 18px;
+  }
 }
